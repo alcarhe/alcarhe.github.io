@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proyectos>
+<!--Englobamos los proyectos-->
+	<!-- Cliente particular-->
+	<proyecto>
+		<!--El estado del proyecto se encuentra en una etiqueta autocntenida--> 
+		<etiqueta estado="en desarrollo"/>
+		<nombre>Proyecto para nada obsceno</nombre>
+		<fechaInicio>10/10/2024</fechaInicio>
+		<fechaFin>10/10/2025</fechaFin>
+		<presupuesto moneda="EURO">250000</presupuesto>
+		<!-- Al tratarse de un id pondré el dni como atributo -->
+		<cliente entidad="particular" dni="12345678A">
+			<nombre>Francisco Javier</nombre>
+			<apellidos>Cuesta Ramos</apellidos>
+			<direccion>Calle El santuario, número 1</direccion>
+			<telefonos>
+				<telefono tipo="fijo">955555551</telefono>
+				<telefono tipo="contacto1">600000000</telefono>
+				<telefono tipo="contacto2">600000001</telefono>
+			</telefonos>
+		</cliente>
+		<equipo>
+			<roles>
+			<!--Aquí están los roles de los empleados-->
+				<rol>
+					<nombre>Jefe de Proyecto</nombre>
+					<descripcion>Se encarga de gestionar, revisar y supervisar el proyecto</descripcion>
+					<codigo>JePr0</codigo>
+					<!--El código es las primeras 2 letras de cada palabra(determinantes y preposiciones no cuentan) y 1 numero-->
+				</rol>
+				<rol>
+					<nombre>Arquitecto</nombre>
+					<descripcion>Se encarga de plantear la solucion y hacer los calculos</descripcion>
+					<codigo>Ar1</codigo>
+				</rol>
+				<rol>
+					<nombre>Analista</nombre>
+					<descripcion>Se encarga de realizar los analisis del proyecto</descripcion>
+					<codigo>An2</codigo>
+				</rol>
+				<rol>
+					<nombre>Analista Programador</nombre>
+					<descripcion>Se encarga de hacer los analisis en terminos de programacion</descripcion>
+					<codigo>AnPr3</codigo>
+				</rol>
+				<rol>
+					<nombre>Programador Senior</nombre>
+					<descripcion>Se encarga de programar, tiene mucha experiencia</descripcion>
+					<codigo>PrSe4</codigo>
+				</rol>
+				<rol>
+					<nombre>Programador</nombre>
+					<descripcion>Se encarga de programar, tiene experiencia</descripcion>
+					<codigo>Pr5</codigo>
+				</rol>
+				<rol>
+					<nombre>Programador Junior</nombre>
+					<descripcion>Se encarga de programar, tiene poca experiencia</descripcion>
+					<codigo>PrJu6</codigo>
+				</rol>
+				<rol>
+					<nombre>Becario</nombre>
+					<descripcion>Persona que esta de practicas</descripcion>
+					<codigo>Be7</codigo>
+				</rol>
+			</roles>
+			<empleados>
+				<empleado rol="JePr0" identificador="Ple00"><!--El rol es un atributo relacionado con los roles de arriba, la identificación del empleado está formada por las 3 primeras letras del nombre del empleado y 2 números-->
+					<nombre>Plex</nombre>
+					<apellidos>Capibara López</apellidos>
+					<fechaNacimiento>30/1/1999</fechaNacimiento>
+					<telefonos>
+						<telefono>600100000</telefono>
+						<telefono>600200000</telefono>
+					</telefonos>
+					<email>mellamanplexmami@gmail.com</email>
+					<direccion>
+						<calle>Pintor del Capibara</calle>
+						<numero>17</numero>
+						<tipoVivienda>Casa</tipoVivienda>
+					</direccion>
+					<antiguedad unidad="2"/>
+				</empleado>
+				<empleado rol="Ar1" identificador="Fer12">
+					<nombre>Fermín</nombre>
+					<apellidos>Trujillo Amador</apellidos>
+					<fechaNacimiento>23/5/1975</fechaNacimiento>
+					<telefonos>
+						<telefono>601000000</telefono>
+						<telefono>602000000</telefono>
+					</telefonos>
+					<email>fermíncroquetas@gmail.com</email>
+					<direccion>
+						<calle>Calle Delicia de las Croquetas</calle>
+						<numero>7</numero>
+						<tipoVivienda>Casa</tipoVivienda>
+					</direccion>
+					<antiguedad unidad="6"/>
+				</empleado>
+				<empleado rol="Ar1" identificador="Pep34">
+					<nombre>Pepe</nombre>
+					<apellidos>Martín López</apellidos>
+					<fechaNacimiento>6/9/1987</fechaNacimiento>
+					<telefonos>
+						<telefono>610101010</telefono>
+						<telefono>610100110</telefono>
+					</telefonos>
+					<email>pepegrillo@hotmail.es</email>
+					<direccion>
+						<calle>Calle Pepinillo</calle>
+						<numero>1ºA Portal 3</numero>
+						<tipoVivienda>Piso</tipoVivienda>
+					</direccion>
+					<antiguedad unidad="4"/>
+				</empleado>
+				<empleado rol="An2" identificador="Jav12">
+					<nombre>Javier</nombre>
+					<apellidos>Suarez Martinez</apellidos>
+					<fechaNacimiento></fechaNacimiento>
+					<telefonos>
+						<telefono>644444444</telefono>
+						<telefono>654444444</telefono>
+					</telefonos>
+					<email>javier.javier.si@hotmail.es</email>
+					<direccion>
+						<calle>Avenida Pintor de la Mona Lisa</calle>
+						<numero>5</numero>
+						<tipoVivienda>Casa</tipoVivienda>
+					</direccion>
+					<antiguedad unidad="2"/>
+				</empleado>
+				<empleado rol="AnPr3" identificador="Jos76">
+					<nombre>José Manuel</nombre>
+					<apellidos>Pérez Gandul</apellidos>
+					<fechaNacimiento>31/1/1988</fechaNacimiento>
+					<telefonos>
+						<telefono>634678912</telefono>
+						<telefono>634679812</telefono>
+					</telefonos>
+					<email>Jos_m1254@hotmail.es</email>
+					<direccion>
+						<calle>Calle Árbol</calle>
+						<numero>6</numero>
+						<tipoVivienda>Casa</tipoVivienda>
+					</direccion>
+					<antiguedad unidad="5"/>
+				</empleado>
+				<empleado rol="PrSe4" identificador="Ang12">
+					<nombre>Angela</nombre>
+					<apellidos>Rodríguez Herrera</apellidos>
+					<fechaNacimiento>17/5/2000</fechaNacimiento>
+					<telefonos>
+						<telefono>666345498</telefono>
+						<telefono>654654651</telefono>
+					</telefonos>
+					<email>AngRo.1_2@gmail.com</email>
+					<direccion>
+						<calle>Calle Oliva</calle>
+						<numero>34</numero>
+						<tipoVivienda>Casa</tipoVivienda>
+					</direccion>
+					<antiguedad unidad="8"/>
+				</empleado>
+				<empleado rol="Pr5" identificador="Fed91">
+					<nombre>Federico</nombre>
+					<apellidos>Roso Ramírez</apellidos>
+					<fechaNacimiento>21/6/1968</fechaNacimiento>
+					<telefonos>
+						<telefono>654321298</telefono>
+						<telefono>654498761</telefono>
+					</telefonos>
+					<email>Federicocorreo102@hotmail.es</email>
+					<direccion>
+						<calle>Avenida Salvador Dalí</calle>
+						<numero>43</numero>
+						<tipoVivienda>Casa</tipoVivienda>
+					</direccion>
+					<antiguedad unidad="2"/>
+				</empleado>
+				<empleado rol="PrJu6" identificador="Pab92">
+					<nombre>Pablo</nombre>
+					<apellidos>Motos López</apellidos>
+					<fechaNacimiento>19/10/1977</fechaNacimiento>
+					<telefonos>
+						<telefono>601010203</telefono>
+						<telefono>611010203</telefono>
+					</telefonos>
+					<email>MotosPablo.77@gmail.com</email>
+					<direccion>
+						<calle>Avenida del Motociclo</calle>
+						<numero>7ºB, Portal 4</numero>
+						<tipoVivienda></tipoVivienda>
+					</direccion>
+					<antiguedad unidad="8"/>
+				</empleado>
+			</empleados>
+		</equipo>
+	</proyecto>
+	
+	<!-- Empresa -->
+	<proyecto>
+		<!--El estado del proyecto se encuentra en una etiqueta autocontenida-->
+		<etiqueta estado="aceptado"/>
+		<nombre>Proyecto 32</nombre>
+		<fechaInicio>20/12/2015</fechaInicio>
+		<fechaFin>29/9/2028</fechaFin>
+		<presupuesto moneda="EURO">2500000</presupuesto>
+		<!-- Al tratarse de un id pondré el ciff como atributo -->
+		<cliente entidad="empresa" ciff="A–12345678">
+			<rezonSocial>Empresa Programadora S.A</rezonSocial>
+			<direccion>Calle Vía de Francia, local 53</direccion>
+			<telefonos>
+				<telefono tipo="fijo">955650187</telefono>
+				<telefono tipo="contacto1">667788011</telefono>
+				<telefono tipo="contacto2">667789012</telefono>
+			</telefonos>
+		</cliente>
+		<equipo>
+			<roles>
+			<!--Aquí están los roles de los empleados-->
+				<rol>
+					<nombre>Jefe de Proyecto</nombre>
+					<descripcion>Se encarga de gestionar, revisar y supervisar el proyecto</descripcion>
+					<codigo>JePr0</codigo>
+					<!--El código es las primeras 2 letras de cada palabra(determinantes y preposiciones no cuentan) y 1 numero-->
+				</rol>
+				<rol>
+					<nombre>Arquitecto</nombre>
+					<descripcion>Se encarga de plantear la solucion y hacer los calculos</descripcion>
+					<codigo>Ar1</codigo>
+				</rol>
+				<rol>
+					<nombre>Analista</nombre>
+					<descripcion>Se encarga de realizar los analisis del proyecto</descripcion>
+					<codigo>An2</codigo>
+				</rol>
+				<rol>
+					<nombre>Analista Programador</nombre>
+					<descripcion>Se encarga de hacer los analisis en terminos de programacion</descripcion>
+					<codigo>AnPr3</codigo>
+				</rol>
+				<rol>
+					<nombre>Programador Senior</nombre>
+					<descripcion>Se encarga de programar, tiene mucha experiencia</descripcion>
+					<codigo>PrSe4</codigo>
+				</rol>
+				<rol>
+					<nombre>Programador</nombre>
+					<descripcion>Se encarga de programar, tiene experiencia</descripcion>
+					<codigo>Pr5</codigo>
+				</rol>
+				<rol>
+					<nombre>Programador Junior</nombre>
+					<descripcion>Se encarga de programar, tiene poca experiencia</descripcion>
+					<codigo>PrJu6</codigo>
+				</rol>
+				<rol>
+					<nombre>Becario</nombre>
+					<descripcion>Persona que esta de practicas</descripcion>
+					<codigo>Be7</codigo>
+				</rol>
+			</roles>
+			<empleados>
+				<empleado rol="JePr0" identificador="Iñi88"><!--El rol es un atributo relacionado con los roles de arriba, la identificación del empleado está formada por las 3 primeras letras del nombre del empleado y 2 números-->
+					<nombre>Iñigo</nombre>
+					<apellidos>Pérez Martín</apellidos>
+					<fechaNacimiento>27/7/2004</fechaNacimiento>
+					<telefonos>
+						<telefono>667740321</telefono>
+						<telefono>699992323</telefono>
+					</telefonos>
+					<email>Iñigo.12_3@hotmail.es</email>
+					<direccion>
+						<calle>Calle Peperoni</calle>
+						<numero>2</numero>
+						<tipoVivienda>Casa</tipoVivienda>
+					</direccion>
+					<antiguedad unidad="1"/>
+				</empleado>
+				<empleado rol="Ar1" identificador="Joa77">
+					<nombre>Joaquín</nombre>
+					<apellidos>Gómez Rico</apellidos>
+					<fechaNacimiento>12/12/1993</fechaNacimiento>
+					<telefonos>
+						<telefono>677877721</telefono>
+						<telefono>676882173</telefono>
+					</telefonos>
+					<email>GómezJoaquín77@gmail.com</email>
+					<direccion>
+						<calle>Calle Olivera</calle>
+						<numero>3ºD, Portal 2</numero>
+						<tipoVivienda>Piso</tipoVivienda>
+					</direccion>
+					<antiguedad unidad="3"/>
+				</empleado>
+				<empleado rol="Ar1" identificador="Ant55">
+					<nombre>Antonio</nombre>
+					<apellidos>Bono Fernández</apellidos>
+					<fechaNacimiento>20/8/1991</fechaNacimiento>
+					<telefonos>
+						<telefono>654948244</telefono>
+						<telefono>688542946</telefono>
+					</telefonos>
+					<email>Jab23BonFe@hotmail.es</email>
+					<direccion>
+						<calle>Calle de los Panaderos</calle>
+						<numero>11</numero>
+						<tipoVivienda>Casa</tipoVivienda>
+					</direccion>
+					<antiguedad unidad="3"/>
+				</empleado>
+				<empleado rol="An2" identificador="Álv91">
+					<nombre>Álvaro</nombre>
+					<apellidos>Rodríguez Rodríguez</apellidos>
+					<fechaNacimiento></fechaNacimiento>
+					<telefonos>
+						<telefono>699546271</telefono>
+						<telefono>675759128</telefono>
+					</telefonos>
+					<email>Rodri76_0@hotmail.es</email>
+					<direccion>
+						<calle>Calle Diego López de Amparo</calle>
+						<numero>1</numero>
+						<tipoVivienda>Casa</tipoVivienda>
+					</direccion>
+					<antiguedad unidad="2"/>
+				</empleado>
+				<empleado rol="AnPr3" identificador="Mar65">
+					<nombre>María</nombre>
+					<apellidos>Jiménez López</apellidos>
+					<fechaNacimiento>23/3/1999</fechaNacimiento>
+					<telefonos>
+						<telefono>622868617</telefono>
+						<telefono>639997797</telefono>
+					</telefonos>
+					<email>JimMar.Lop_23@gmail.com</email>
+					<direccion>
+						<calle>Avenida de Europa</calle>
+						<numero>8ºA, Portal 3</numero>
+						<tipoVivienda>Piso</tipoVivienda>
+					</direccion>
+					<antiguedad unidad="1"/>
+				</empleado>
+				<empleado rol="PrSe4" identificador="Est90">
+					<nombre>Estela</nombre>
+					<apellidos>Reinors Marín</apellidos>
+					<fechaNacimiento>11/11/1979</fechaNacimiento>
+					<telefonos>
+						<telefono>661294512</telefono>
+						<telefono>699240156</telefono>
+					</telefonos>
+					<email>EstelaRein79@hotmail.es</email>
+					<direccion>
+						<calle>Calle Azucena</calle>
+						<numero>27</numero>
+						<tipoVivienda>Casa</tipoVivienda>
+					</direccion>
+					<antiguedad unidad="5"/>
+				</empleado>
+				<empleado rol="Pr5" identificador="Hel11">
+					<nombre>Heloisa</nombre>
+					<apellidos>Hernández Ruíz</apellidos>
+					<fechaNacimiento>22/2/1999</fechaNacimiento>
+					<telefonos>
+						<telefono>676501449</telefono>
+						<telefono>688153945</telefono>
+					</telefonos>
+					<email>HRu_loisa@gmail.com</email>
+					<direccion>
+						<calle>Avenida del Obrero</calle>
+						<numero>40</numero>
+						<tipoVivienda>Casa</tipoVivienda>
+					</direccion>
+					<antiguedad unidad="1"/>
+				</empleado>
+				<empleado rol="PrJu6" identificador="Mar71">
+					<nombre>Marina</nombre>
+					<apellidos>Cubero Andrade</apellidos>
+					<fechaNacimiento>19/11/1989</fechaNacimiento>
+					<telefonos>
+						<telefono>667059011</telefono>
+						<telefono>675024577</telefono>
+					</telefonos>
+					<email>AndradeMarina_32@hotmail.es</email>
+					<direccion>
+						<calle>Calle Rosario</calle>
+						<numero>9</numero>
+						<tipoVivienda>Casa</tipoVivienda>
+					</direccion>
+					<antiguedad unidad="6"/>
+				</empleado>
+				<empleado rol="PrJu6" identificador="Lui12">
+					<nombre>Luis</nombre>
+					<apellidos>Portillo Gómez</apellidos>
+					<fechaNacimiento></fechaNacimiento>
+					<telefonos>
+						<telefono>672531781</telefono>
+						<telefono>672947581</telefono>
+					</telefonos>
+					<email>AbcPortillo_200@gmail.com</email>
+					<direccion>
+						<calle>Calle Ladrillo</calle>
+						<numero>10</numero>
+						<tipoVivienda>Casa</tipoVivienda>
+					</direccion>
+					<antiguedad unidad="3"/>
+				</empleado>
+				<empleado rol="Be7" identificador="Alf11">
+					<nombre>Alfonso</nombre>
+					<apellidos>Torres Altas</apellidos>
+					<fechaNacimiento>29/9/1986</fechaNacimiento>
+					<telefonos>
+						<telefono>610102753</telefono>
+						<telefono>679912335</telefono>
+					</telefonos>
+					<email>AlfonsoTorres_86@gmail.com</email>
+					<direccion>
+						<calle>Calle de la Torre</calle>
+						<numero>21</numero>
+						<tipoVivienda>Casa</tipoVivienda>
+					</direccion>
+					<antiguedad unidad="7"/>
+				</empleado>
+			</empleados>
+		</equipo>
+	</proyecto>
+</proyectos>
