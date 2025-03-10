@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Primero he comenzado creando bibliotecas, que contiene las bibliotecas-->
+<bibliotecas>
+	<!--Aquí empieza la primera biblioteca, he decidido que el estado de las bibliotecas debe aparecer como un atributo de estas-->
+	<biblioteca estado="funcionando">
+		<nombre>Biblioteca TheWeekend</nombre>
+		<dirección>Calle la semana,nº1</dirección>
+		<telefono>666778899</telefono>
+		<!--Aquí comienzan las categorias que contienen la biblioteca y que puede tener un libro dentro de esta-->
+		<categorias>
+			<!--Estas son las categorías-->
+			<categoria>terror</categoria>
+			<categoria>comedia</categoria>
+			<categoria>suspense</categoria>
+		</categorias>
+		<!--Aquí comienzan los libros-->
+		<libros>
+			<!--El identificador está como atributo de libro-->
+			<libro identificador="ab123">
+				<titulo>Alenderman y la casa encantada</titulo>
+				<autor>Fernando Flow</autor>
+				<añoedicion>1999</añoedicion>
+				<categoria>terror</categoria>
+				<prestado_a>Willy Rex</prestado_a>
+					<!--Aquí está la información la persona, he decidido que sea lo penúltimo(antes de la fecha de préstamo y devolución) para que quede más ordenado, además añadir luego la información del alumno o profesor, en este caso es un alumno asi que no tiene departamento-->
+					<dni>777456A</dni>
+					<direccion>Calle Pintor del Barrio,23</direccion>
+					<!--He creado un apartado de telefonos porque puede ser que el alumno o profesor tenga uno o más números de contacto-->
+					<telefonos>
+						<telefono>111223344</telefono>
+						<telefono>222334455</telefono>
+					</telefonos>
+				<f_prestamo>26/03/2024</f_prestamo>
+				<f_devolucion>26/04/2024</f_devolucion>
+			</libro>
+				<!--Comienza la información del segundo libro-->
+			<libro identificador="ab456">
+				<titulo>Los secretos de YT</titulo>
+				<autor>David Cánovas</autor>
+				<añoedicion>2003</añoedicion>
+				<categoria>comedia</categoria>
+				<prestado_a>Natty Peluso</prestado_a>
+					<!--Aquí está la información de la persona, en este caso es un profesor asi que se le añade el apartado departamento-->
+					<dni>654321B</dni>
+					<direccion>Calle Escultor Ricardo Ediciones,22</direccion>
+					<telefonos>
+						<telefono>444556677</telefono>
+					</telefonos>
+					<departamento>Informática</departamento>
+				<f_prestamo>10/05/2024</f_prestamo>
+				<f_devolucion>10/06/2024</f_devolucion>
+			</libro>
+			<!--Comienza la información del tercer libro-->
+			<libro identificador="ab789">
+				<titulo>El libro de la guasa</titulo>
+				<autor>Ruben Doblas</autor>
+				<añoedicion>2006</añoedicion>
+				<categoria>suspense</categoria>
+				<!--Como este libro no está prestado no aparece nada-->
+			</libro>
+			<!--Aquí acaban los libros de esta biblioteca asi que se cierra el apartado "libros"-->
+		</libros>
+	</biblioteca>
+	<!--Aquí empieza una nueva biblioteca-->
+	<biblioteca estado="cerrado">
+		<nombre>Biblioteca Sueca</nombre>
+		<dirección>Avenida Ingenieros Pablo y Motos,Local 69</dirección>
+		<telefono>694206669</telefono>
+		<!--Las categorias-->
+		<categorias>
+			<categoria>romance</categoria>
+			<categoria>policiaco</categoria>
+			<categoria>comedia</categoria>
+			<categoria>tragicomedia</categoria>
+		</categorias>
+		<!--Aquí comienzan los libros-->
+		<libros>
+			<!--El identificador está como atributo de libro-->
+			<libro identificador="bc666">
+				<titulo>La tragicomedia de Calisto, Melibea y la vieja puta Celestina</titulo>
+				<autor>Fernando se la Roza</autor>
+				<añoedicion>1970</añoedicion>
+				<categoria>tragicomedia</categoria>
+			</libro>
+			<!--En este caso como la biblioteca está cerrada no tiene prestado ningún libro-->
+			<libro identificador="vi999">
+				<titulo>La resistencia</titulo>
+				<autor>David Broncano</autor>
+				<añoedicion>2003</añoedicion>
+				<categoria>comedia</categoria>
+			</libro>
+			<libro identificador="gh564">
+				<titulo>El cantar de las croquetas</titulo>
+				<autor>Fermín Trujillo</autor>
+				<añoedicion>2015</añoedicion>
+				<categoria>romance</categoria>
+			</libro>
+			<libro identificador="hf222">
+				<titulo>El caso de Pdidi</titulo>
+				<autor>Greta Thunberg</autor>
+				<añoedicion>2021</añoedicion>
+				<categoria>policiaco</categoria>
+			</libro>
+		</libros>
+	</biblioteca>
+	<!--Aquí comienza otra biblioteca-->
+	<biblioteca estado="en reforma">
+		<nombre>Biblioteca del Manteca</nombre>
+		<dirección>Calle Cirujano Mario Vaquerizo,Local33</dirección>
+		<telefono>671540343</telefono>
+		<!--Las categorias-->
+		<categorias>
+			<categoria>romance</categoria>
+			<categoria>comedia</categoria>
+		</categorias>
+		<!--Aquí comienzan los libros-->
+		<libros>
+			<libro>
+				<titulo>Wigetta Extremo</titulo>
+				<autor>Samuel de Luque</autor>
+				<añoedicion>2015</añoedicion>
+				<categoria>romance</categoria>
+				<prestado_a>Frank Stax</prestado_a>
+					<!--Aquí está la información la persona,es un alumno, no tiene departamento-->
+					<dni>774986C</dni>
+					<direccion>Calle del Cupo,1</direccion>
+					<telefonos>
+						<telefono>196272344</telefono>
+					</telefonos>
+				<f_prestamo>10/12/2024</f_prestamo>
+				<f_devolucion>10/01/2025</f_devolucion>
+			</libro>
+			<!--El siguiente libro no está prestado-->
+			<libro identificador="vt223">
+				<titulo>Amor</titulo>
+				<autor>Persona Romantica</autor>
+				<añoedicion>2010</añoedicion>
+				<categoria>romance</categoria>
+			</libro>
+			<!--El siguiente libro tampoco está prestado-->
+			<libro identificador="uj555">
+				<titulo>La Broma</titulo>
+				<autor>Alguien Gracioso</autor>
+				<añoedicion>2010</añoedicion>
+				<categoria>comedia</categoria>
+			</libro>
+		</libros>
+	</biblioteca>
+</bibliotecas>
